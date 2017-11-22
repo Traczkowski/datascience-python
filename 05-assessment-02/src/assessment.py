@@ -97,7 +97,7 @@ def pandas_only_given_state(df, state):
     state. Only include these columns:
         Neighborhood, City, med_2011, med_2014
     '''
-    return df[df.State == 'CA'][['Neighborhood', 'City', 'med_2011', 'med_2014']].copy()
+    return df[df.State == state][['Neighborhood', 'City', 'med_2011', 'med_2014']].copy()
 
 
 def pandas_max_rent(df):
